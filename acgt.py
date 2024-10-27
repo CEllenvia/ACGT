@@ -15,7 +15,6 @@ class acgt:
     def encode(self):
         # Convert the imported thing into string-stored binary so can divided into 2 bit
         bins = format(int(self.inp.encode().hex(), base=16), 'b')
-        print(bins)
         # Transform it every 2 bit
         in_lis = wrap(bins, width=2)
         out_lis = []
